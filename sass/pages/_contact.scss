@@ -1,4 +1,20 @@
 /* MAIN STYLING */
+.header-contact {
+  height: 95vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.7),
+      rgba($color-primary-dark, 0.7)
+    ),
+    url("../img/contact-bg.jpeg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  animation: headerAnim 2s;
+  backface-visibility: hidden;
+}
 
 .contact-section {
   background: #eafefc;
@@ -7,7 +23,6 @@
 
 .contact-main {
   display: flex;
-  //   max-width: 1300px;
   margin: 0 auto;
   height: 100%;
   width: 100%;
@@ -21,12 +36,8 @@
   letter-spacing: 1.2px;
   height: 100%;
   margin: auto;
-  //   position: relative;
-
-  //   border: 1px solid red;
 
   &__info {
-    // border: 1px solid green;
     height: 70%;
     padding-left: 5rem;
     padding-bottom: 8rem;
@@ -34,7 +45,6 @@
     i {
       font-size: 3rem;
       color: $color-primary;
-      //   padding: 0 0.3rem;
       transition: 0.2s ease;
 
       &:hover {
@@ -69,8 +79,6 @@
 
   &__img-bottom {
     height: 30%;
-    // position: relative;
-    // top: -5rem;
 
     img {
       display: block;
@@ -82,10 +90,6 @@
 
     .carousel {
       box-shadow: 1rem 2rem 2rem rgba(0, 0, 0, 0.3);
-      //   height: 530px;
-      //   width: 100%;
-      //   height: 100%;
-      //   width: 500px;
       width: 40rem;
       height: auto;
       overflow: hidden;
@@ -102,17 +106,11 @@
 
 .contact-right {
   width: 55%;
-  //   position: relative;
-  //   border-radius: 0.5rem;
-  //   margin-right: 20px;
 }
 
 // Contact Form
 .contact-form-container {
-  //   position: relative;
-  //   bottom: 12.5rem;
   border-radius: 1rem;
-  //   right: 5rem;
   width: 100%;
   box-shadow: 2rem 2rem $color-primary-light;
 }
@@ -120,7 +118,6 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  //   align-items: center;
   justify-content: center;
   background-color: $color-primary;
   padding: 5rem 0;
@@ -153,8 +150,6 @@
       &::-webkit-input-placeholder {
         color: $color-grey-very-dark;
         opacity: 0.5;
-        // font-size: 2rem;
-        // font-family: inherit;
       }
     }
     textarea {
@@ -163,7 +158,6 @@
   }
 
   &__submit-btn {
-    // margin-left: 0;
     margin-left: 5%;
     width: 90%;
   }

@@ -672,6 +672,20 @@ body {
 }
 
 /* MAIN STYLING */
+.header-contact {
+  height: 95vh;
+  width: 100%;
+  background-image: linear-gradient(to right bottom, rgba(181, 229, 130, 0.7), rgba(1, 82, 73, 0.7)), url("../img/contact-bg.jpeg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  -webkit-animation: headerAnim 2s;
+          animation: headerAnim 2s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
 .contact-section {
   background: #eafefc;
   padding: 8rem 5rem;
