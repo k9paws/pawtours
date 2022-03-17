@@ -674,6 +674,7 @@ body {
 /* MAIN STYLING */
 .contact-section {
   background: #eafefc;
+  padding: 8rem 5rem;
 }
 
 .contact-main {
@@ -685,49 +686,61 @@ body {
 
 .contact-left {
   width: 40%;
+  font-size: 2rem;
   line-height: 1.4;
-  padding-top: 80px;
-  padding-bottom: 150px;
+  padding: 4rem 6rem;
   letter-spacing: 1.2px;
+  height: 100%;
+  margin: auto;
 }
-
-.contact-right {
-  width: 60%;
-  position: relative;
+.contact-left__info {
+  height: 70%;
+  padding-left: 5rem;
+  padding-bottom: 8rem;
 }
-
-.social-media-navbar {
-  padding: 20px 0;
+.contact-left__info i {
+  font-size: 3rem;
+  color: #0e8044;
+  transition: 0.2s ease;
 }
-
-.social-media-navbar ul {
+.contact-left__info i:hover {
+  color: #b5e582;
+  font-weight: 700;
+  transform: scale(1.3);
+  text-shadow: 0 0 black, 4px 4px 8px #015249;
+}
+.contact-left__info .social-media-navbar {
+  padding: 2rem 0;
+}
+.contact-left__info .social-media-navbar ul {
   display: flex;
   color: #0d457f;
   list-style: none;
   padding-bottom: 20px;
 }
-
-.social-media-navbar ul li a {
+.contact-left__info .social-media-navbar ul li a {
   color: #0d457f;
-  padding: 0 25px;
+  padding: 0 4rem;
   font-size: 1.2rem;
 }
-
-.social-media-navbar ul li a:first-child {
-  padding-left: 0px;
+.contact-left__info .social-media-navbar ul li a:first-child {
+  padding-left: 0;
+}
+.contact-left__img-bottom {
+  height: 30%;
+}
+.contact-left__img-bottom img {
+  display: block;
+  width: 100%;
+  border-radius: 0.9rem;
 }
 
-.social-media-navbar ul li a:hover,
-.social-media-navbar ul li a:focus {
-  text-shadow: 0 0 black, 3px 3px 2px #b5e582;
-  transition-duration: 0.1s;
+.contact-right {
+  width: 55%;
 }
 
 .contact-form-container {
-  position: relative;
-  bottom: 12.5rem;
   border-radius: 1rem;
-  right: 5rem;
   width: 100%;
   box-shadow: 2rem 2rem #b5e582;
 }
