@@ -1,0 +1,112 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  // font-weight: 400;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  color: $color-grey-dark;
+}
+
+.heading-primary {
+  color: $color-light;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: default;
+
+  span {
+    display: inline-block;
+
+    span {
+      display: inline-block;
+    }
+  }
+
+  &--main {
+    display: inline-block;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    margin-top: 10rem;
+    // animation: moveFromLeft 2s;
+    backface-visibility: hidden;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
+  }
+
+  &--sub {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 1.5rem;
+    // animation: moveFromRight 2s;
+    position: relative;
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  // width: auto;
+  cursor: default;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  display: inline-block;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  letter-spacing: 0.2rem;
+  color: transparent;
+  transition: all 0.2s ease;
+
+  &--white {
+    font-size: 3.5rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: auto;
+    cursor: default;
+    color: #fff;
+    padding: 1rem 4rem;
+    letter-spacing: 2.2px;
+    border-radius: 0.2rem;
+    background-color: $color-primary;
+  }
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+}
+
+.heading-tertiary {
+  cursor: default;
+
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @include respond(tab-land) {
+    font-size: 2.3rem;
+  }
+}
+
+.paragraph {
+  font-size: $default-font-size;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

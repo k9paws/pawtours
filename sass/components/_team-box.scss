@@ -1,0 +1,213 @@
+.team-leader-cards {
+  width: 100%;
+  height: 35rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: -10rem;
+  }
+}
+
+.team-leader {
+  &__card {
+    height: 100%;
+    width: 22%;
+    min-width: 25rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    // margin: 5rem;
+
+    @include respond(tab-port) {
+      height: 30rem;
+      transform: translateX(-46%);
+      margin-left: 0;
+      margin-right: 0;
+      margin: 5rem;
+    }
+
+    &:hover {
+      transform: translateY(-1.5rem) scale(1.05);
+      background-color: rgba($color-light, 0.95);
+    }
+
+    &:hover &-middle &-middle-img {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 20rem;
+      background-size: 100%;
+      background-position: center 25%;
+      border-radius: 2px;
+    }
+
+    &:hover &-top {
+      transform: translateY(-100%);
+      opacity: 1;
+    }
+
+    &:hover &-middle {
+      padding: 1rem;
+    }
+
+    &-top {
+      background-color: rgba($color-light, 0.8);
+      position: absolute;
+      width: 100%;
+      height: auto;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: all 0.3s ease;
+
+      @include respond(tab-port) {
+        transform: translateX(100%);
+        opacity: 1;
+        height: 100%;
+        padding-top: 2rem;
+      }
+    }
+
+    &-details {
+      ul {
+        list-style: none;
+        width: 90%;
+        margin: 0 auto;
+
+        li {
+          text-align: center;
+          font-size: 1.5rem;
+          padding: 0.8rem;
+
+          &:not(:last-child) {
+            border-bottom: 1px solid #333;
+          }
+        }
+      }
+    }
+
+    &-middle {
+      background-color: rgba($color-light, 0.8);
+      font-size: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      padding: 5rem;
+      text-align: center;
+      border-radius: 0.3rem;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+      transition: all 0.2s ease;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+
+      @include respond(tab-port) {
+        transform: translateX(-5%);
+      }
+
+      &-img {
+        position: relative;
+        width: 18rem;
+        height: 18rem;
+        background-repeat: no-repeat;
+        background-size: 150%;
+        background-position: center 25%;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+
+        @include respond(tab-port) {
+          width: 13rem;
+          height: 13rem;
+        }
+
+        &--1 {
+          background-image: url(../img/team-mason.jpeg);
+        }
+
+        &--2 {
+          background-image: url(../img/team-xena-2.jpeg);
+          background-position: right top 40%;
+        }
+        &--3 {
+          background-image: url(../img/team-murphy.jpeg);
+        }
+
+        &--4 {
+          background-image: url(../img/team-skye-1.jpeg);
+          background-position: right 30% top 40%;
+        }
+
+        img {
+          display: block;
+        }
+      }
+
+      &-content {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &:hover &-middle {
+      background-color: clue;
+    }
+
+    @include respond(tab-port) {
+      padding: 1rem;
+    }
+
+    &-bottom {
+      background-color: rgba($color-light, 0.8);
+      width: 100%;
+      height: auto;
+      font-size: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 2.5rem;
+      text-align: center;
+      border-radius: 0.3rem;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease;
+      transform-origin: top;
+      z-index: -1;
+      opacity: 0;
+
+      @include respond(tab-port) {
+        transform: translateX(100%);
+        opacity: 1;
+        z-index: 2;
+      }
+      // @include respond(tab-port) {
+      //   padding: 2rem;
+      // }
+    }
+
+    &:hover &-bottom {
+      transform: translateY(100%);
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      opacity: 1;
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: $default-font-size;
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+    outline: none;
+  }
+
+  &--white {
+    background-color: $color-light;
+    color: $color-primary;
+    font-weight: 400;
+
+    &::after {
+      background-color: $color-light;
+    }
+  }
+
+  &--green {
+    background-color: $color-primary;
+    color: #fff;
+    min-width: 18rem;
+    max-width: 28rem;
+    text-align: center;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.2s;
+  }
+
+  &--animated {
+    animation: moveFromBottom 1.5s linear;
+    animation-delay: 7s;
+    animation-fill-mode: backwards;
+    backface-visibility: hidden;
+  }
+}
+
+.btn-text {
+  font-size: $default-font-size;
+  color: $color-primary;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 0.1rem solid $color-primary;
+  padding: 0.3rem;
+  transition: all 0.2s ease;
+  border-radius: 0.2rem;
+
+  @include respond(tab-port) {
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    color: #fff;
+    box-shadow: 0 1rem 2rem $box-shadow-btn-hover;
+    transform: translateY(-0.2rem);
+  }
+
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 1rem 2rem $box-shadow-btn-active;
+  }
+}

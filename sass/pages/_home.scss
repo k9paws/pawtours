@@ -1,0 +1,187 @@
+// ABOUT SECTION
+.section-about {
+  background-color: $color-grey-light-1;
+  padding: 8rem 5rem 15rem;
+  width: 100%;
+  height: auto;
+
+  @include respond(tab-land) {
+    padding: 10rem 5rem;
+    height: auto;
+  }
+  @include respond(tab-port) {
+    // padding: 10rem 3rem;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+  }
+}
+
+.about-container {
+  width: 100%;
+  height: 100%;
+}
+
+.about-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+
+  @include respond(tab-land) {
+    margin-top: -8rem;
+  }
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  &__left {
+    width: 48%;
+    height: 100%;
+
+    @include respond(tab-land) {
+      width: 40%;
+    }
+
+    @include respond(tab-port) {
+      width: 90vw;
+    }
+  }
+
+  &__right {
+    width: 48%;
+    height: 100%;
+
+    @include respond(tab-land) {
+      width: 55%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+}
+
+// TEAM LEADERS SECTION
+.section-team-leaders {
+  padding: 10rem 2rem 20rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.7),
+      rgba($color-primary-dark, 0.7)
+    ),
+    url("../img/features-1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-attachment: fixed;
+  height: 85rem;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+    height: 100%;
+  }
+}
+
+.team-leaders-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// TOURS SECTION
+.section-tours {
+  background-color: transparent;
+  padding: 10rem 2rem;
+  width: 100%;
+  position: relative;
+
+  @include respond(tab-port) {
+    // padding: 20rem 0;
+  }
+}
+
+.tours-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+// TESTIMONIALS SECTION
+.section-testimonials {
+  padding: 5rem 0;
+  position: relative;
+}
+
+// BOOKING SECTION
+.section-booking {
+  padding: 12rem 5rem 15rem;
+  height: auto;
+  width: 100%;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.7),
+      rgba($color-primary-dark, 0.7)
+    ),
+    url("../img/booking-bg-4.jpeg");
+  background-position: left center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.booking-container {
+  background-image: linear-gradient(
+      105deg,
+      rgba(#fff, 0.85) 0%,
+      rgba(#fff, 0.85) 50%,
+      rgba(#fff, 0.3) 50%
+    ),
+    url("../img/booking-bg-3.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  border-radius: 2rem;
+  box-shadow: 0 2.5rem 6rem rgba(0, 0, 0, 0.45);
+
+  @include respond(tab-land) {
+    background-image: linear-gradient(
+        105deg,
+        rgba(#fff, 0.9) 0%,
+        rgba(#fff, 0.9) 70%,
+        transparent 70%
+      ),
+      url(../img/booking-1.jpeg);
+  }
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(
+        to right,
+        rgba(#fff, 0.9) 0%,
+        rgba(#fff, 0.9) 100%
+      ),
+      url(../img/nat-10.jpg);
+  }
+}
+
+.booking-form {
+  &__form {
+    width: 50%;
+    padding: 6rem;
+
+    @include respond(tab-land) {
+      width: 70%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+}

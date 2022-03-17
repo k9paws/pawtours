@@ -1,0 +1,228 @@
+// @keyframes moveFromLeft {
+//   0% {
+//     opacity: 0;
+//     transform: translateX(-10rem);
+//   }
+
+//   70% {
+//     transform: translateX(1rem);
+//   }
+
+//   100% {
+//     opacity: 1;
+//     transform: translateX(0);
+//   }
+// }
+
+// @keyframes moveFromRight {
+//   0% {
+//     opacity: 0;
+//     transform: translateX(10rem);
+//   }
+
+//   70% {
+//     transform: translateX(-1rem);
+//   }
+
+//   100% {
+//     opacity: 1;
+//     transform: translateX(0);
+//   }
+// }
+
+@keyframes moveFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(6rem);
+  }
+
+  70% {
+    transform: translateY(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Header Animations
+@keyframes headerAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.nature {
+  opacity: 0;
+  animation: natureAnim 1.5s linear forwards 0.4s;
+  display: block;
+  font-weight: 600;
+  // backface-visibility: hidden;
+}
+
+@keyframes natureAnim {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    color: #fff;
+  }
+
+  50% {
+    transform: scaleY(1.3);
+    transform-origin: bottom;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+    transform-origin: bottom;
+    color: #fff;
+  }
+}
+
+.and {
+  opacity: 0;
+  animation: andAnim 5s forwards 1.2s;
+  // backface-visibility: hidden;
+}
+
+@keyframes andAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.dogs {
+  opacity: 0;
+  animation: dogsAnim 1.2s linear forwards 1.8s;
+  // backface-visibility: hidden;
+}
+
+@keyframes dogsAnim {
+  0% {
+    opacity: 0;
+    transform: scale(5) translateY(10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.create {
+  opacity: 0;
+  animation: adventureAnim 2s linear forwards;
+  animation-delay: 3.5s;
+  // backface-visibility: hidden;
+}
+
+@keyframes createAnim {
+  0% {
+    opacity: 0;
+    transform-origin: left;
+    transform: scaleX(0);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: left;
+
+    transform: scaleX(1);
+  }
+}
+
+.the {
+  opacity: 0;
+  animation: adventureAnim 2s linear forwards;
+  animation-delay: 3.9s;
+  // backface-visibility: hidden;
+}
+
+@keyframes theAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.ultimate {
+  display: inline-block;
+  opacity: 0;
+  animation: ultimateAnim 1.6s linear forwards;
+  animation-delay: 4.5s;
+  // backface-visibility: hidden;
+  z-index: 5;
+  // position: relative;
+}
+
+@keyframes ultimateAnim {
+  0% {
+    opacity: 0;
+    font-weight: 400;
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(3);
+    font-weight: bolder;
+  }
+
+  100% {
+    transform: scale(1);
+    font-weight: 400;
+    opacity: 1;
+  }
+}
+.adventure {
+  opacity: 0;
+  animation: adventureAnim 1.8s linear forwards;
+  animation-delay: 6s;
+  // backface-visibility: hidden;
+}
+
+@keyframes adventureAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.header-btn {
+  opacity: 0;
+  animation: headerBtnAnim 1.3s linear forwards;
+}
+
+@keyframes headerBtnAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(20rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes navDropDown {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+}
