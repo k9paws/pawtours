@@ -868,6 +868,122 @@ body {
   outline: 3px solid red !important;
 }
 
+/* MAIN STYLING */
+.header-company {
+  height: 95vh;
+  width: 100%;
+  background-image: linear-gradient(to right bottom, rgba(181, 229, 130, 0.7), rgba(1, 82, 73, 0.7)), url("../img/company-bg.jpeg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  -webkit-animation: headerAnim 2s;
+          animation: headerAnim 2s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.company-section {
+  background-color: #eafefc;
+  height: 100%;
+  padding: 0 5rem 10rem;
+}
+
+.company-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.company-left {
+  width: 30%;
+  padding-top: 5rem;
+}
+.company-left__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 3rem 0;
+}
+.company-left__content h3 {
+  font-size: 2rem;
+}
+.company-left__container {
+  width: 100%;
+  background-color: #0e8044;
+  padding: 40px;
+  font-size: 0.9rem;
+}
+.company-left__container p {
+  color: white;
+  line-height: 1.3;
+  font-size: 1.3rem;
+  letter-spacing: 1.2px;
+  text-align: justify;
+}
+.company-left__container ul {
+  color: white;
+  line-height: 2;
+  letter-spacing: 1.5px;
+  left: 20px;
+  position: relative;
+  padding-top: 10px;
+}
+.company-left__image {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.company-left img {
+  display: block;
+  width: 100%;
+}
+
+.company-right {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 5rem;
+}
+
+.company-top-image {
+  position: relative;
+  width: 100%;
+  height: 20%;
+}
+
+.company-top-image img {
+  display: block;
+  width: 120%;
+  bottom: 0;
+  left: 0;
+  position: relative;
+}
+
+.next-destination {
+  border-bottom: 5px solid #0e8044;
+  border-left: 5px solid #0e8044;
+  width: 120%;
+  height: 35%;
+  padding: 50px 0px 50px 100px;
+}
+
+article {
+  line-height: 1.3;
+  letter-spacing: 2px;
+  padding: 10px 0 0 0;
+}
+
+article p {
+  padding: 20px 0;
+}
+
 .wrapper {
   max-width: 120rem;
   width: 100%;
