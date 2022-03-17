@@ -14,63 +14,70 @@
 
 <body>
 
-    <!-- HAMBURGER NAVIGATION -->
-    <div class="navigation">
 
-        <!-- Checkbox to display:none later -->
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
-        <!-- Clickable element -->
-        <label for="navi-toggle" class="navigation__button">
-            <span class="navigation__icon">&nbsp;</span>
-        </label>
-
-        <!-- Navigation background -->
-        <div class="navigation__background">&nbsp;</div>
-
-        <!-- Container spanning entire page for UL -->
-        <nav class="navigation__nav-container">
-
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">About NaTours</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">Your Benefits</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">Popular Tours</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">Testimonials</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">Book Now</a>
-                </li>
-            </ul>
-
-        </nav>
-
-    </div>
 
     <!-- HEADER STARTS -->
-    <header class="header">
+    <header class="header-faq">
         <div class="wrapper">
 
             <div class="header__navbar-container">
-                <a href="index.html">
-                    <h4 alt="Logo" class="header__logo">
-                        K<span class="header__nine">9</span>PAWS
-                    </h4>
-                </a>
+                <div class="header__navbar-logo">
+                    <a href="#">
+                        <h4 alt="Logo" class="header__logo">
+                            K<span class="header__nine">9</span>PAWS
+                        </h4>
+                    </a>
+                </div>
+
+                <!-- HAMBURGER NAVIGATION -->
+                <div class="navigation">
+
+                    <!-- Checkbox to display:none later -->
+                    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+                    <!-- Clickable element -->
+                    <label for="navi-toggle" class="navigation__button">
+                        <span class="navigation__icon">&nbsp;</span>
+                    </label>
+
+                    <!-- Navigation background -->
+                    <div class="navigation__background">&nbsp;</div>
+
+                    <!-- Container spanning entire page for UL -->
+                    <nav class="navigation__nav-container">
+
+                        <ul class="navigation__list">
+                            <li class="navigation__item">
+                                <a href="index.html" class="navigation__link">Home</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="company.html" class="navigation__link">About PawTours</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="faq.html" class="navigation__link">FAQ</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="privacy.html" class="navigation__link">Privacy Policy</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="terms.html" class="navigation__link">Terms & Conditions</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="contact.html" class="navigation__link">Contact Us</a>
+                            </li>
+                        </ul>
+
+                    </nav>
+
+                </div>
 
 
                 <nav class="header__navbar">
                     <ul>
-                        <li><a href="#section-about">about</a></li>
-                        <li><a href="#section-team">team members</a></li>
-                        <li><a href="#section-tours">tours</a></li>
-                        <li><a href="#section-booking">booking</a></li>
+                        <li><a href="index.html#section-about">about</a></li>
+                        <li><a href="index.html#section-team">team members</a></li>
+                        <li><a href="index.html#section-tours">tours</a></li>
+                        <li><a href="index.html#section-booking">booking</a></li>
                         <li><a href="contact.html">contact</a></li>
 
                     </ul>
@@ -86,12 +93,24 @@
                     <span class="heading-primary--main u-margin-bottom-medium">
                         <span>FAQ</span>
                     </span>
-                    <span class="heading-primary--sub u-margin-bottom-big">
-                        <span>Our Most Frequently Asked Questions</span>
-                    </span>
+
                 </h1>
 
             </div>
+
+
+            <div class="faq-contact-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--sub u-margin-bottom-medium">
+                        <span>cant find your answer below?</span>
+                    </span>
+                    <div>
+                        <a href="contact.html" class="btn btn--white">Contact Us!</a>
+                    </div>
+                </h1>
+
+            </div>
+
         </div>
     </header>
 
@@ -99,11 +118,175 @@
     <!-- MAIN STARTS -->
     <main>
 
+        <section class="section-faq" id="section-faq">
+            <div class="wrapper">
+
+
+
+                <div class="faq-container">
+                    <div class="faq active">
+                        <h3 class="faq-title">
+                            Why shouldn't we trust atoms?
+                        </h3>
+
+                        <p class="faq-text">
+                            They make up everything
+                        </p>
+
+                        <button class="faq-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <div class="faq">
+                        <h3 class="faq-title">
+                            What do you call someone with no body and no nose?
+                        </h3>
+                        <p class="faq-text">
+                            Nobody knows.
+                        </p>
+                        <button class="faq-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <div class="faq">
+                        <h3 class="faq-title">
+                            What's the object-oriented way to become wealthy?
+                        </h3>
+                        <p class="faq-text">
+                            Inheritance.
+                        </p>
+                        <button class="faq-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <div class="faq">
+                        <h3 class="faq-title">
+                            How many tickles does it take to tickle an octopus?
+                        </h3>
+                        <p class="faq-text">
+                            Ten-tickles!
+                        </p>
+                        <button class="faq-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <div class="faq">
+                        <h3 class="faq-title">
+                            What is: 1 + 1?
+                        </h3>
+                        <p class="faq-text">
+                            Depends on who are you asking.
+                        </p>
+                        <button class="faq-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <div class="faq">
+                        <h3 class="faq-title">
+                            What is: 1 + 1?
+                        </h3>
+                        <p class="faq-text">
+                            Depends on who are you asking.
+                        </p>
+                        <button class="faq-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <div class="faq">
+                        <h3 class="faq-title">
+                            What is: 1 + 1?
+                        </h3>
+                        <p class="faq-text">
+                            Depends on who are you asking.
+                        </p>
+                        <button class="faq-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <div class="faq">
+                        <h3 class="faq-title">
+                            What is: 1 + 1?
+                        </h3>
+                        <p class="faq-text">
+                            Depends on who are you asking.
+                        </p>
+                        <button class="faq-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <div class="faq">
+                        <h3 class="faq-title">
+                            What is: 1 + 1?
+                        </h3>
+                        <p class="faq-text">
+                            Depends on who are you asking.
+                        </p>
+                        <button class="faq-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="wrapper">
+
+                <div class="footer__logo-box u-margin-bottom-big">
+                    <h4 alt="Logo" class="footer__logo">K<span class="header__nine">9</span>PAWS
+                    </h4>
+                </div>
+
+                <div class="footer__box">
+
+                    <div class="footer__left">
+                        <div class="footer__navigation">
+                            <ul class="footer-list">
+
+                                <li class="footer__item"><a href="company.html" class="footer__link">Company</a></li>
+                                <li class="footer__item"><a href="contact.html" class="footer__link">Contact Us</a></li>
+                                <li class="footer__item"><a href="faq.html" class="footer__link">FAQ</a></li>
+                                <li class="footer__item"><a href="privacy.html" class="footer__link">Privacy Policy</a>
+                                </li>
+                                <li class="footer__item"><a href="terms.html" class="footer__link">Terms</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer__right">
+                        <p class="footer__copyright">
+                            Designed and Built by <a href="#" class="footer__link">Gary Rosen</a>. &copy;K9PAWS 2022.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="script.js"></script>
+
+    <script src="faq.js"></script>
 </body>
 
 </html>
