@@ -16,9 +16,10 @@
 
 
     <!-- HEADER STARTS -->
-    <header class="header-contact">
+    <header class="header header-main">
         <div class="wrapper">
 
+            <!-- HEADER NAVBAR -->
             <div class="header__navbar-container">
                 <div class="header__navbar-logo">
                     <a href="index.html">
@@ -30,21 +31,14 @@
 
                 <!-- HAMBURGER NAVIGATION -->
                 <div class="navigation">
-
-                    <!-- Checkbox to display:none later -->
                     <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
-                    <!-- Clickable element -->
                     <label for="navi-toggle" class="navigation__button">
                         <span class="navigation__icon">&nbsp;</span>
                     </label>
 
-                    <!-- Navigation background -->
                     <div class="navigation__background">&nbsp;</div>
 
-                    <!-- Container spanning entire page for UL -->
                     <nav class="navigation__nav-container">
-
                         <ul class="navigation__list">
                             <li class="navigation__item">
                                 <a href="index.html" class="navigation__link">Home</a>
@@ -62,27 +56,25 @@
                                 <a href="contact.html" class="navigation__link">Contact Us</a>
                             </li>
                         </ul>
-
                     </nav>
-
                 </div>
 
+                <!-- MAIN PAGE NAVBAR -->
                 <nav class="header__navbar">
                     <ul>
                         <li><a href="index.html#section-about">about</a></li>
                         <li><a href="index.html#section-team">team members</a></li>
                         <li><a href="index.html#section-tours">tours</a></li>
+                        <li><a href="index.html#section-testimonials">stories</a></li>
                         <li><a href="index.html#section-booking">booking</a></li>
                         <li><a href="contact.html">contact</a></li>
 
                     </ul>
                 </nav>
-
-
-
             </div>
 
 
+            <!-- HEADING TITLE CONTENT -->
             <div class="header__text-box">
                 <h1 class="heading-primary">
                     <span class="heading-primary--main u-margin-bottom-medium">
@@ -110,7 +102,7 @@
 
 
                     <div class="contact-left__info">
-                        <div class="social-media-navbar">
+                        <div class="contact-left__info--social">
                             <ul>
                                 <li>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -155,7 +147,7 @@
                     <div class="contact-form-container">
                         <form action="#" method="#" id="contact-form" class="contact-form" name="contact-form">
 
-                            <div class="form-control">
+                            <div class="contact-form__group">
                                 <label for="name" class="sr-only ">Enter Your Name</label>
                                 <input type="text" id="contact-form-user-name" name="name" placeholder="Name">
 
@@ -165,7 +157,7 @@
                                     placeholder="E-mail Address">
 
                             </div>
-                            <div class="form-control">
+                            <div class="contact-form__group">
                                 <label for="comment" class="sr-only">Enter Your Comments</label>
                                 <textarea name="comment" id="contact-form-user-comment"
                                     placeholder="Comment"></textarea>
@@ -225,8 +217,8 @@
 
 
 </body>
-<script src="contact-form.js"></script>
-<script src="image-carousel.js"></script>
+<script src="./script/contact-form.js"></script>
+<script src="./script/image-carousel.js"></script>
 
 <script>
 

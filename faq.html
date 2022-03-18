@@ -14,12 +14,11 @@
 
 <body>
 
-
-
     <!-- HEADER STARTS -->
-    <header class="header-faq">
+    <header class="header header-main">
         <div class="wrapper">
 
+            <!-- HEADER NAVBAR -->
             <div class="header__navbar-container">
                 <div class="header__navbar-logo">
                     <a href="index.html">
@@ -31,21 +30,14 @@
 
                 <!-- HAMBURGER NAVIGATION -->
                 <div class="navigation">
-
-                    <!-- Checkbox to display:none later -->
                     <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
-                    <!-- Clickable element -->
                     <label for="navi-toggle" class="navigation__button">
                         <span class="navigation__icon">&nbsp;</span>
                     </label>
 
-                    <!-- Navigation background -->
                     <div class="navigation__background">&nbsp;</div>
 
-                    <!-- Container spanning entire page for UL -->
                     <nav class="navigation__nav-container">
-
                         <ul class="navigation__list">
                             <li class="navigation__item">
                                 <a href="index.html" class="navigation__link">Home</a>
@@ -63,28 +55,25 @@
                                 <a href="contact.html" class="navigation__link">Contact Us</a>
                             </li>
                         </ul>
-
                     </nav>
-
                 </div>
 
-
+                <!-- MAIN PAGE NAVBAR -->
                 <nav class="header__navbar">
                     <ul>
                         <li><a href="index.html#section-about">about</a></li>
                         <li><a href="index.html#section-team">team members</a></li>
                         <li><a href="index.html#section-tours">tours</a></li>
+                        <li><a href="index.html#section-testimonials">stories</a></li>
                         <li><a href="index.html#section-booking">booking</a></li>
                         <li><a href="contact.html">contact</a></li>
 
                     </ul>
                 </nav>
-
-
-
             </div>
 
 
+            <!-- HEADING TITLE CONTENT -->
             <div class="header__text-box">
                 <h1 class="heading-primary">
                     <span class="heading-primary--main u-margin-bottom-medium">
@@ -92,9 +81,7 @@
                     </span>
 
                 </h1>
-
             </div>
-
 
             <div class="faq-contact-box">
                 <h1 class="heading-primary">
@@ -102,10 +89,9 @@
                         <span>cant find your answer below?</span>
                     </span>
                     <div>
-                        <a href="contact.html" class="btn btn--white">Contact Us!</a>
+                        <a href="contact.html" class="btn btn__round btn__round--white">Contact Us!</a>
                     </div>
                 </h1>
-
             </div>
 
         </div>
@@ -115,13 +101,15 @@
     <!-- MAIN STARTS -->
     <main>
 
+        <!-- SECTION FAQ -->
         <section class="section-faq" id="section-faq">
             <div class="wrapper">
 
                 <div class="faq-container">
 
+                    <!-- Left Side -->
+                    <!-- FAQ Booking -->
                     <div class="faq-container__left">
-
                         <h2>
                             <span class="faq-heading--sub heading-primary--sub u-margin-bottom-small">
                                 <span>Booking/General Questions</span>
@@ -262,9 +250,9 @@
                         </div>
                     </div>
 
-
+                    <!-- RIght Side -->
+                    <!-- FAQ Camping -->
                     <div class="faq-container__right">
-
                         <h2>
                             <span class="faq-heading--sub heading-primary--sub u-margin-bottom-small">
                                 <span>Camping/Hiking Questions</span>
@@ -429,13 +417,9 @@
                                 <i class="fas fa-times"></i>
                             </button>
                         </div>
-
                     </div>
 
-
-
                 </div>
-
             </div>
 
         </section>
@@ -451,11 +435,9 @@
                 </div>
 
                 <div class="footer__box">
-
                     <div class="footer__left">
                         <div class="footer__navigation">
                             <ul class="footer-list">
-
                                 <li class="footer__item"><a href="company.html" class="footer__link">Company</a></li>
                                 <li class="footer__item"><a href="contact.html" class="footer__link">Contact Us</a></li>
                                 <li class="footer__item"><a href="faq.html" class="footer__link">FAQ</a></li>
@@ -476,7 +458,7 @@
     </main>
 
 
-    <script src="faq.js"></script>
+    <script src="./script/faq.js"></script>
 </body>
 
 </html>

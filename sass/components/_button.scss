@@ -1,18 +1,13 @@
+// Main button shape and styles
 .btn {
-  &,
-  &:link,
-  &:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    border-radius: 10rem;
-    transition: all 0.2s;
-    position: relative;
-    font-size: $default-font-size;
-    border: none;
-    cursor: pointer;
-  }
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+
+  position: relative;
+  font-size: $default-font-size;
+  border: none;
+  cursor: pointer;
 
   &:hover {
     transform: translateY(-0.3rem);
@@ -31,28 +26,7 @@
     outline: none;
   }
 
-  &--white {
-    background-color: $color-light;
-    color: $color-primary;
-    font-weight: 400;
-
-    &::after {
-      background-color: $color-light;
-    }
-  }
-
-  &--green {
-    background-color: $color-primary;
-    color: #fff;
-    min-width: 18rem;
-    max-width: 28rem;
-    text-align: center;
-
-    &::after {
-      background-color: $color-primary;
-    }
-  }
-
+  // Pseudo states
   &::after {
     content: "";
     display: inline-block;
@@ -66,6 +40,40 @@
     transition: 0.2s;
   }
 
+  // Individual buttons
+
+  // ROUND
+  &__round {
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    transition: all 0.2s;
+
+    // ROUND--WHITE
+    &--white {
+      background-color: $color-light;
+      color: $color-primary;
+      font-weight: 400;
+
+      &::after {
+        background-color: $color-light;
+      }
+    }
+
+    // ROUND--GREEN
+    &--green {
+      background-color: $color-primary;
+      color: #fff;
+      min-width: 18rem;
+      max-width: 28rem;
+      text-align: center;
+
+      &::after {
+        background-color: $color-primary;
+      }
+    }
+  }
+
+  // HEADER--ANIMATED
   &--animated {
     animation: moveFromBottom 1.5s linear;
     animation-delay: 7s;
@@ -74,6 +82,7 @@
   }
 }
 
+// Text style button
 .btn-text {
   font-size: $default-font-size;
   color: $color-primary;
