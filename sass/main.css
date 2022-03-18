@@ -687,7 +687,7 @@ body {
 }
 
 .contact-section {
-  background: #eafefc;
+  background: #eee;
   padding: 8rem 5rem;
 }
 
@@ -728,12 +728,10 @@ body {
 }
 .contact-left__info .social-media-navbar ul {
   display: flex;
-  color: #0d457f;
   list-style: none;
   padding-bottom: 20px;
 }
 .contact-left__info .social-media-navbar ul li a {
-  color: #0d457f;
   padding: 0 4rem;
   font-size: 1.2rem;
 }
@@ -822,7 +820,6 @@ body {
 .contact-form input[type=submit] {
   text-align: center;
   background: #b5e582;
-  color: #0d457f;
   border: none;
   padding: 10px;
   letter-spacing: 2px;
@@ -1040,6 +1037,48 @@ body {
   transition: all 0.3s ease;
 }
 
+.header-terms {
+  height: 95vh;
+  width: 100%;
+  background-image: linear-gradient(to right bottom, rgba(181, 229, 130, 0.7), rgba(1, 82, 73, 0.7)), url("../img/company-6.jpeg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  -webkit-animation: headerAnim 2s;
+          animation: headerAnim 2s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.terms {
+  background-color: #eee;
+  padding: 5rem 0;
+}
+
+.terms-container {
+  width: 100%;
+  height: 100%;
+}
+
+.terms-paragraph {
+  font-size: 2rem;
+}
+.terms__content {
+  padding: 5rem;
+  width: auto;
+  height: 100%;
+  border-bottom: 2px solid rgba(14, 128, 68, 0.3);
+  border-top: 2px solid rgba(14, 128, 68, 0.3);
+}
+.terms__text {
+  width: 100%;
+  height: auto;
+}
+.terms__text:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
 /* MAIN STYLING */
 .header-company {
   height: 95vh;
@@ -1056,7 +1095,7 @@ body {
 }
 
 .company-section {
-  background-color: #eafefc;
+  background-color: #eee;
   height: 100%;
   padding: 0 5rem 10rem;
 }
