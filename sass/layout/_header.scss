@@ -26,6 +26,11 @@
     transform-origin: top;
     animation: navDropDown 1.3s linear forwards;
 
+    @include respond(phone) {
+      max-width: 100%;
+      margin: 0;
+    }
+
     &:hover {
       background-color: rgba($color-primary, 0.9);
     }
@@ -49,6 +54,12 @@
 
     .navbar-logo {
       width: auto;
+
+      @include respond(phone) {
+        position: absolute;
+        top: 9rem;
+        left: 5%;
+      }
     }
   }
 
@@ -60,12 +71,22 @@
       width: 70%;
     }
 
+    @include respond(phone) {
+      width: 90%;
+      margin: 0 auto;
+    }
+
     ul {
       display: flex;
       list-style: none;
       justify-content: space-between;
       align-items: center;
       width: 100%;
+
+      @include respond(phone) {
+        justify-content: center;
+        width: 90%;
+      }
 
       li {
         padding: 1rem 0;
@@ -79,6 +100,10 @@
           padding: 0.5rem 1rem;
           margin: 0 1rem;
           transition: 0.2s ease;
+
+          @include respond(phone) {
+            margin: 0.5rem;
+          }
         }
 
         &:hover a,

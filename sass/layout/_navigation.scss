@@ -3,17 +3,18 @@
   visibility: visible;
   position: relative;
   top: -3.5rem;
-  left: -7.5rem;
+  left: -5rem;
   height: auto;
   width: 10%;
   transition: all 0.2s ease;
 
-  @include respond(laptop) {
+  @include respond(tab-port) {
     left: 0;
   }
 
-  @include respond(tab-port) {
-    top: -8rem;
+  @include respond(phone) {
+    top: 6rem;
+    left: 90%;
   }
 
   &:hover &__background {
@@ -35,11 +36,6 @@
     transition: all 0.2s eae;
     z-index: 101;
     cursor: pointer;
-
-    @include respond(tab-port) {
-      top: 4.5rem;
-      right: 1rem;
-    }
   }
 
   &__background {
@@ -56,11 +52,6 @@
     z-index: 50;
     opacity: 0.3;
     transition: all 0.4s cubic-bezier(0.83, 0, 0.17, 1);
-
-    @include respond(tab-port) {
-      top: 4.5rem;
-      right: 1rem;
-    }
   }
 
   &__nav-container {
