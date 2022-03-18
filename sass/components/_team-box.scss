@@ -5,6 +5,17 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
+  @include respond(laptop) {
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+
+    &:not(:last-child) {
+      margin: 0 1rem;
+    }
+  }
+
   @include respond(tab-port) {
     flex-direction: column;
     flex-wrap: nowrap;
@@ -23,9 +34,13 @@
     cursor: pointer;
     position: relative;
     transition: all 0.3s ease;
-    // margin: 5rem;
+
+    @include respond(laptop) {
+      min-width: 18%;
+    }
 
     @include respond(tab-port) {
+      width: 30%;
       height: 30rem;
       transform: translateX(-46%);
       margin-left: 0;
@@ -126,6 +141,11 @@
         border-radius: 50%;
         transition: all 0.3s ease;
 
+        @include respond(laptop) {
+          width: 15rem;
+          height: 15rem;
+        }
+
         @include respond(tab-port) {
           width: 13rem;
           height: 13rem;
@@ -171,6 +191,7 @@
       background-color: rgba($color-light, 0.8);
       width: 100%;
       height: auto;
+      max-height: 100%;
       font-size: 1.5rem;
       display: flex;
       flex-direction: column;
@@ -194,9 +215,6 @@
         opacity: 1;
         z-index: 2;
       }
-      // @include respond(tab-port) {
-      //   padding: 2rem;
-      // }
     }
 
     &:hover &-bottom {

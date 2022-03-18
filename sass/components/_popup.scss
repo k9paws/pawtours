@@ -69,14 +69,12 @@
     @include respond(tab-land) {
       flex-direction: column;
       max-height: 80vh;
-      // max-height: 90vh;
       overflow-y: scroll;
     }
   }
 
   &__left {
     width: 35%;
-    // height: 100%;
 
     @include respond(tab-land) {
       display: flex;
@@ -96,7 +94,6 @@
 
     @include respond(tab-land) {
       width: 100%;
-      // margin-top: 0;
     }
   }
 
