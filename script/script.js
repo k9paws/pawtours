@@ -7,5 +7,5 @@ gsap.from(".header__logo", {
   y: 500,
   duration: 1.3,
   rotation: 720,
-  delay: 7,
+  delay: 0.5,
 });

@@ -1,11 +1,28 @@
 body {
   font-family: "Montserrat", sans-serif;
-  // font-weight: 400;
   font-size: $default-font-size;
   line-height: 1.7;
   color: $color-grey-dark;
 }
 
+// Logo
+.logo {
+  font-size: 3rem;
+  font-weight: 600;
+  color: $color-grey-very-dark;
+  transition: all 0.4s ease;
+
+  &--nine {
+    color: $color-primary;
+    font-size: 4rem;
+    display: inline-block;
+    position: relative;
+    top: 0.9rem;
+    transition: all 0.4s ease;
+  }
+}
+
+// Headers
 .heading-primary {
   color: $color-light;
   text-transform: uppercase;
@@ -26,7 +43,7 @@ body {
     font-weight: 400;
     letter-spacing: 3.5rem;
     margin-top: 10rem;
-    // animation: moveFromLeft 2s;
+    animation: moveFromLeft 2s;
     backface-visibility: hidden;
 
     @include respond(phone) {
@@ -40,7 +57,7 @@ body {
     font-size: 1.8rem;
     font-weight: 400;
     letter-spacing: 1.5rem;
-    // animation: moveFromRight 2s;
+    animation: moveFromRight 2s;
     position: relative;
 
     @include respond(phone) {
@@ -53,14 +70,14 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  // width: auto;
   cursor: default;
+  display: inline-block;
+
   background-image: linear-gradient(
     to right,
     $color-primary-light,
     $color-primary-dark
   );
-  display: inline-block;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -108,5 +125,20 @@ body {
 
   &:not(:last-child) {
     margin-bottom: 3rem;
+  }
+}
+
+// FAQ SECTION
+.faq-heading--sub {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: default;
+
+  @include respond(phone) {
+    letter-spacing: 0.5rem;
   }
 }

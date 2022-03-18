@@ -25,19 +25,23 @@
     transition: all 0.3s ease;
     transform-origin: top;
     animation: navDropDown 1.3s linear forwards;
-    // animation-delay: 6s;
 
     &:hover {
       background-color: rgba($color-primary, 0.9);
     }
 
-    &:hover &__logo &__nine {
+    &:hover &__navbar-logo--nine {
       color: #fff;
     }
-  }
 
-  &__logo-box {
-    width: 15%;
+    &:hover .navbar-logo .logo--nine {
+      color: rgba($color-primary-light, 0.7);
+    }
+
+    &:hover .header__navbar ul li a {
+      font-weight: bold;
+      letter-spacing: 1.5px;
+    }
   }
 
   &__navbar {
@@ -64,35 +68,17 @@
           text-transform: uppercase;
           padding: 0.5rem 1rem;
           margin: 0px 10px;
-          // position: relative;
           transition: 0.2s ease;
         }
 
         &:hover a,
         &:focus a {
-          // color: #333;
           background-color: $color-primary-light;
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
           transform: scale(1.2);
-          font-weight: bold;
-          letter-spacing: 1.5px;
         }
       }
     }
-  }
-
-  &__logo {
-    font-size: 3rem;
-    font-weight: 600;
-    color: $color-grey-very-dark;
-  }
-
-  &__nine {
-    color: $color-primary;
-    font-size: 4rem;
-    display: inline-block;
-    position: relative;
-    top: 0.9rem;
   }
 
   &__text-box {
