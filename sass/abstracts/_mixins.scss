@@ -32,7 +32,6 @@
 
   @if $breakpoint == tab-port {
     @media only screen and (max-width: 768px) {
-      //768px
       @content;
     }
   }
@@ -51,14 +50,12 @@
 
   @if $breakpoint == laptop {
     @media only screen and (max-width: 1200px) {
-      //1024px
       @content;
     }
   }
 
   @if $breakpoint == big-desktop {
     @media only screen and (min-width: 1200px) {
-      //1800px
       @content;
     }
   }

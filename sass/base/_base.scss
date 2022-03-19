@@ -10,7 +10,7 @@ html {
   font-size: 62.5%;
 
   @include respond(big-desktop) {
-    // font-size: 75%; //1rem = 12px = 75%
+    font-size: 75%;
   }
 
   @include respond(laptop) {
@@ -18,20 +18,18 @@ html {
   }
 
   @include respond(tab-land) {
-    font-size: 55%; //1rem = 9px = 56.25%
+    font-size: 55%;
   }
 
   @include respond(tab-port) {
-    font-size: 50%; //1rem = 8px - 50%
+    font-size: 50%;
   }
 }
 
 body {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-
   padding: 3rem;
-  // color: #fff;
 
   @include respond(tab-land) {
     padding: 0;
