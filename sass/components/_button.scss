@@ -80,6 +80,18 @@
     animation-fill-mode: backwards;
     backface-visibility: hidden;
   }
+
+  // Booking Section Hidden buttons for Phone styling
+  &--booking {
+    width: 20rem;
+    text-align: center;
+    margin: 0 0.5rem 2rem;
+    display: none;
+
+    @include respond(phone) {
+      display: inline-block;
+    }
+  }
 }
 
 // Text style button

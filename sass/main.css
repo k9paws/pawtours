@@ -802,6 +802,12 @@ body {
   justify-content: space-between;
   padding: 5rem 0;
 }
+@media only screen and (max-width: 500px) {
+  .faq-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .faq-container__left, .faq-container__right {
   width: 48%;
   background-color: #eee;
@@ -813,6 +819,11 @@ body {
   overflow: hidden;
   transition: all 0.4s ease;
   color: #444;
+}
+@media only screen and (max-width: 500px) {
+  .faq-container__left, .faq-container__right {
+    width: 95%;
+  }
 }
 
 .faq {
@@ -1111,6 +1122,17 @@ body {
           animation-fill-mode: backwards;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+}
+.btn--booking {
+  width: 20rem;
+  text-align: center;
+  margin: 0 0.5rem 2rem;
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+  .btn--booking {
+    display: inline-block;
+  }
 }
 
 .btn-text {
