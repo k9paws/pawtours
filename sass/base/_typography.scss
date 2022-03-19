@@ -76,7 +76,6 @@ body {
   font-weight: 700;
   cursor: default;
   display: inline-block;
-
   background-image: linear-gradient(
     to right,
     $color-primary-light,
@@ -113,13 +112,11 @@ body {
 
   @include respond(phone) {
     font-size: 2.5rem;
-    // width: 100%;
   }
 }
 
 .heading-tertiary {
   cursor: default;
-
   font-size: $default-font-size;
   font-weight: 700;
   text-transform: uppercase;

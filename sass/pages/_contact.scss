@@ -151,7 +151,6 @@
   @include respond(tab-port) {
     width: 100%;
     position: relative;
-    // top: -20rem;
   }
 }
 
@@ -219,7 +218,6 @@
   input[type="submit"] {
     text-align: center;
     background: $color-primary-light;
-    // color: #0d457f;
     border: none;
     padding: 10px;
     letter-spacing: 2px;
