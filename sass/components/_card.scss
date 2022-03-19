@@ -9,6 +9,7 @@
 
   @include respond(phone) {
     width: 48%;
+    color: #333;
   }
 
   // @include respond(tab-port) {
@@ -182,6 +183,7 @@
       top: 0;
       right: 0;
       width: 95%;
+      font-weight: 400;
     }
   }
 
@@ -284,11 +286,17 @@
   &__price-only {
     font-size: 1.4rem;
     text-transform: uppercase;
+    @include respond(phone) {
+      font-weight: 700;
+    }
   }
 
   &__price-value {
     font-size: 6rem;
     font-weight: 100;
+    @include respond(phone) {
+      font-weight: 400;
+    }
   }
 
   //********* RESPONSIVE STYLING ********

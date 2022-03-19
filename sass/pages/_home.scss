@@ -13,6 +13,10 @@
     margin: 0 auto;
     height: auto;
     width: 100%;
+
+    @include respond(phone) {
+      padding: 5rem 2rem;
+    }
   }
 }
 
@@ -70,6 +74,7 @@
 
 // TEAM LEADERS SECTION
 .section-team-leaders {
+  width: 100%;
   padding: 10rem 2rem 20rem;
   background-image: linear-gradient(
       to right bottom,
@@ -81,11 +86,11 @@
   background-repeat: no-repeat;
   background-position: left bottom;
   background-attachment: fixed;
-  height: 85rem;
+  height: 100%;
 
   @include respond(tab-port) {
     padding: 10rem 0;
-    height: 100%;
+    background-position: center;
   }
 }
 
@@ -132,9 +137,14 @@
       rgba($color-primary-dark, 0.7)
     ),
     url("../img/booking-bg-4.jpeg");
+  background-repeat: no-repeat;
   background-position: left center;
   background-attachment: fixed;
   background-size: cover;
+
+  @include respond(phone) {
+    padding: 5rem 0;
+  }
 }
 
 .booking-container {
@@ -169,6 +179,10 @@
       ),
       url(../img/nat-10.jpg);
   }
+
+  @include respond(phone) {
+    margin: 2rem;
+  }
 }
 
 .booking-form {
@@ -186,7 +200,7 @@
 
     @include respond(phone) {
       padding: 2rem;
-      text-align: center;
+      // text-align: center;
     }
   }
 }

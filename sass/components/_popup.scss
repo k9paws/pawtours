@@ -122,5 +122,9 @@
     column-gap: 5rem;
     column-rule: 2px solid $color-grey-light-1;
     hyphens: auto;
+
+    @include respond(phone) {
+      column-count: 1;
+    }
   }
 }

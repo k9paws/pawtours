@@ -277,6 +277,11 @@ body {
   color: transparent;
   transition: all 0.2s ease;
 }
+@media only screen and (max-width: 500px) {
+  .heading-secondary {
+    font-size: 3.5rem !important;
+  }
+}
 .heading-secondary--white {
   font-size: 3.5rem;
   display: inline-block;
@@ -393,6 +398,11 @@ body {
     width: 100%;
   }
 }
+@media only screen and (max-width: 768px) and (max-width: 500px) {
+  .section-about {
+    padding: 5rem 2rem;
+  }
+}
 
 .about-container {
   width: 100%;
@@ -452,18 +462,19 @@ body {
 }
 
 .section-team-leaders {
+  width: 100%;
   padding: 10rem 2rem 20rem;
   background-image: linear-gradient(to right bottom, rgba(181, 229, 130, 0.7), rgba(1, 82, 73, 0.7)), url("../img/features-1.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left bottom;
   background-attachment: fixed;
-  height: 85rem;
+  height: 100%;
 }
 @media only screen and (max-width: 768px) {
   .section-team-leaders {
     padding: 10rem 0;
-    height: 100%;
+    background-position: center;
   }
 }
 
@@ -502,9 +513,15 @@ body {
   height: auto;
   width: 100%;
   background-image: linear-gradient(to right bottom, rgba(181, 229, 130, 0.7), rgba(1, 82, 73, 0.7)), url("../img/booking-bg-4.jpeg");
+  background-repeat: no-repeat;
   background-position: left center;
   background-attachment: fixed;
   background-size: cover;
+}
+@media only screen and (max-width: 500px) {
+  .section-booking {
+    padding: 5rem 0;
+  }
 }
 
 .booking-container {
@@ -525,6 +542,11 @@ body {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg);
   }
 }
+@media only screen and (max-width: 500px) {
+  .booking-container {
+    margin: 2rem;
+  }
+}
 
 .booking-form__form {
   width: 50%;
@@ -543,7 +565,6 @@ body {
 @media only screen and (max-width: 500px) {
   .booking-form__form {
     padding: 2rem;
-    text-align: center;
   }
 }
 
@@ -1448,6 +1469,7 @@ body {
 @media only screen and (max-width: 500px) {
   .card {
     width: 48%;
+    color: #333;
   }
 }
 .card__side {
@@ -1545,6 +1567,7 @@ body {
     top: 0;
     right: 0;
     width: 95%;
+    font-weight: 400;
   }
 }
 .card__heading-span {
@@ -1606,9 +1629,19 @@ body {
   font-size: 1.4rem;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 500px) {
+  .card__price-only {
+    font-weight: 700;
+  }
+}
 .card__price-value {
   font-size: 6rem;
   font-weight: 100;
+}
+@media only screen and (max-width: 500px) {
+  .card__price-value {
+    font-weight: 400;
+  }
 }
 @media only screen and (max-width: 56.25em), only screen and (hover: none) {
   .card {
@@ -1762,6 +1795,11 @@ body {
      object-fit: cover;
 }
 
+@media only screen and (max-width: 500px) {
+  .booking-form__group-btn button {
+    min-width: 100%;
+  }
+}
 .booking-form__group:not(:last-child) {
   margin-bottom: 2rem;
 }
@@ -1987,6 +2025,12 @@ body {
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
+}
+@media only screen and (max-width: 500px) {
+  .popup__text {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
 }
 
 .navigation {

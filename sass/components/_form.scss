@@ -1,4 +1,12 @@
 .booking-form {
+  &__group {
+    &-btn button {
+      @include respond(phone) {
+        min-width: 100%;
+      }
+    }
+  }
+
   &__group:not(:last-child) {
     margin-bottom: 2rem;
   }
