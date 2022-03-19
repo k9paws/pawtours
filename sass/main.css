@@ -592,12 +592,22 @@ body {
   background: #eee;
   padding: 8rem 5rem;
 }
+@media only screen and (max-width: 500px) {
+  .contact-section {
+    padding: 0 4rem 1rem;
+  }
+}
 
 .contact-main {
   display: flex;
   margin: 0 auto;
   height: 100%;
   width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .contact-main {
+    flex-direction: column;
+  }
 }
 
 .contact-left {
@@ -609,25 +619,54 @@ body {
   height: 100%;
   margin: auto;
 }
+@media only screen and (max-width: 500px) {
+  .contact-left {
+    width: 100%;
+    padding: 2rem;
+  }
+}
 .contact-left__info {
   height: 70%;
   padding-left: 5rem;
   padding-bottom: 8rem;
 }
+@media only screen and (max-width: 500px) {
+  .contact-left__info {
+    padding: 0 5rem 3rem;
+    text-align: center;
+  }
+}
 .contact-left__info--social {
   padding: 2rem 0;
+  width: auto;
 }
 .contact-left__info--social ul {
   display: flex;
   list-style: none;
   padding-bottom: 2rem;
 }
+@media only screen and (max-width: 500px) {
+  .contact-left__info--social ul {
+    justify-content: space-between;
+  }
+}
 .contact-left__info--social ul li a {
   padding: 0 4rem;
   font-size: 1.2rem;
+  display: inline-block;
+}
+@media only screen and (max-width: 500px) {
+  .contact-left__info--social ul li a {
+    padding: 1rem;
+  }
 }
 .contact-left__info--social ul li a:first-child {
   padding-left: 0;
+}
+@media only screen and (max-width: 500px) {
+  .contact-left__info--social ul li a:first-child {
+    padding-left: 1rem;
+  }
 }
 .contact-left__info i {
   font-size: 3rem;
@@ -658,6 +697,11 @@ body {
   overflow: hidden;
   border-radius: 0.9rem;
 }
+@media only screen and (max-width: 500px) {
+  .contact-left__img-bottom .carousel {
+    width: auto;
+  }
+}
 .contact-left__img-bottom .image-container {
   display: flex;
   transform: translateX(0);
@@ -667,11 +711,23 @@ body {
 .contact-right {
   width: 55%;
 }
+@media only screen and (max-width: 500px) {
+  .contact-right {
+    width: 100%;
+    position: relative;
+  }
+}
 
 .contact-form-container {
   border-radius: 1rem;
   width: 100%;
   box-shadow: 2rem 2rem #b5e582;
+}
+@media only screen and (max-width: 500px) {
+  .contact-form-container {
+    margin: 3rem 0;
+    box-shadow: none;
+  }
 }
 
 .contact-form {
@@ -705,7 +761,7 @@ body {
 @media only screen and (max-width: 768px) {
   .contact-form__group input,
 .contact-form__group textarea {
-    width: 100%;
+    width: 90%;
   }
 }
 .contact-form__group input::-webkit-input-placeholder,
@@ -732,6 +788,11 @@ body {
   width: 40%;
   display: block;
   margin-top: 3rem;
+}
+@media only screen and (max-width: 500px) {
+  .contact-form input[type=submit] {
+    width: 100%;
+  }
 }
 .contact-form input[type=submit]:hover,
 .contact-form input[type=submit]:focus {
@@ -956,6 +1017,11 @@ body {
 
 .terms-paragraph {
   font-size: 2rem;
+}
+@media only screen and (max-width: 500px) {
+  .terms-paragraph {
+    padding: 0 3rem;
+  }
 }
 .terms__content {
   padding: 5rem;

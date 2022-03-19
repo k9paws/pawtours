@@ -68,8 +68,6 @@
                         <li><a href="index.html#section-tours">tours</a></li>
                         <li><a href="index.html#section-testimonials">stories</a></li>
                         <li><a href="index.html#section-booking">booking</a></li>
-                        <li><a href="contact.html">contact</a></li>
-
                     </ul>
                 </nav>
             </div>
@@ -96,85 +94,88 @@
 
         <!-- CONTACT SECTION -->
         <section class="contact-section">
-            <div class="contact-main">
+            <div class="wrapper">
+                <div class="contact-main">
 
-                <!-- CONTACT INFO -->
-                <div class="contact-left">
+                    <!-- CONTACT INFO -->
+                    <div class="contact-left">
 
 
-                    <div class="contact-left__info">
-                        <div class="contact-left__info--social">
-                            <ul>
-                                <li>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-                                <li>
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href=""><i class="fab fa-whatsapp"></i></a>
-                                </li>
-                            </ul>
-                            <p>info@pawtours.com</p>
+                        <div class="contact-left__info">
+                            <div class="contact-left__info--social">
+                                <ul>
+                                    <li>
+                                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fab fa-whatsapp"></i></a>
+                                    </li>
+                                </ul>
+                                <p>info@pawtours.com</p>
+                            </div>
+                            <div>
+                                <p>123-456-7890</p>
+                                <p>123 Address St, Unit 10</p>
+                                <p>Toronto, ONT</p>
+                                <p>A1A 1A1</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>123-456-7890</p>
-                            <p>123 Address St, Unit 10</p>
-                            <p>Toronto, ONT</p>
-                            <p>A1A 1A1</p>
-                        </div>
-                    </div>
 
-                    <div class="contact-left__img-bottom">
-                        <div class="carousel">
-                            <div class="image-container" id="imgs">
-                                <img src="./img/winter-3.jpeg" alt="">
-                                <img src="./img/forest-1.jpeg" alt="">
-                                <img src="./img/carousel-1.jpeg" alt="">
-                                <img src="./img/features-1.jpeg" alt="">
-                                <img src="./img/booking-bg-1.jpeg" alt="">
-                                <img src="./img/boating-1.jpeg" alt="">
-                                <img src="./img/carousel-2.jpeg" alt="">
+                        <div class="contact-left__img-bottom">
+                            <div class="carousel">
+                                <div class="image-container" id="imgs">
+                                    <img src="./img/winter-3.jpeg" alt="">
+                                    <img src="./img/forest-1.jpeg" alt="">
+                                    <img src="./img/carousel-1.jpeg" alt="">
+                                    <img src="./img/features-1.jpeg" alt="">
+                                    <img src="./img/booking-bg-1.jpeg" alt="">
+                                    <img src="./img/boating-1.jpeg" alt="">
+                                    <img src="./img/carousel-2.jpeg" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- CONTACT FORM -->
+                    <div class="contact-right">
+                        <div class="contact-form-container">
+                            <form action="#" method="#" id="contact-form" class="contact-form" name="contact-form">
+
+                                <div class="contact-form__group">
+                                    <label for="name" class="sr-only ">Enter Your Name</label>
+                                    <input type="text" id="contact-form-user-name" name="name" placeholder="Name">
+
+
+                                    <label for="user-email" class="sr-only">Enter E-mail Address</label>
+                                    <input type="text" id="contact-form-user-email" name="user-email"
+                                        placeholder="E-mail Address">
+
+                                </div>
+                                <div class="contact-form__group">
+                                    <label for="comment" class="sr-only">Enter Your Comments</label>
+                                    <textarea name="comment" id="contact-form-user-comment"
+                                        placeholder="Comment"></textarea>
+                                </div>
+
+                                <div class="form-error-summary-msg hidden" id="contact-form-error-summary">Form not
+                                    valid!
+                                </div>
+
+                                <div class="contact-form__submit-btn">
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
                 </div>
-
-                <!-- CONTACT FORM -->
-                <div class="contact-right">
-                    <div class="contact-form-container">
-                        <form action="#" method="#" id="contact-form" class="contact-form" name="contact-form">
-
-                            <div class="contact-form__group">
-                                <label for="name" class="sr-only ">Enter Your Name</label>
-                                <input type="text" id="contact-form-user-name" name="name" placeholder="Name">
-
-
-                                <label for="user-email" class="sr-only">Enter E-mail Address</label>
-                                <input type="text" id="contact-form-user-email" name="user-email"
-                                    placeholder="E-mail Address">
-
-                            </div>
-                            <div class="contact-form__group">
-                                <label for="comment" class="sr-only">Enter Your Comments</label>
-                                <textarea name="comment" id="contact-form-user-comment"
-                                    placeholder="Comment"></textarea>
-                            </div>
-
-                            <div class="form-error-summary-msg hidden" id="contact-form-error-summary">Form not valid!
-                            </div>
-
-                            <div class="contact-form__submit-btn">
-                                <input type="submit" value="Submit">
-                            </div>
-                        </form>
-
-                    </div>
-                </div>
-
             </div>
         </section>
 
