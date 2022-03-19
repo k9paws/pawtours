@@ -306,6 +306,7 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
+  transition: all 0.3s ease;
 }
 @media only screen and (max-width: 1068px) {
   .heading-tertiary {
@@ -1249,6 +1250,14 @@ body {
     margin-right: 0;
     margin: 5rem;
   }
+  .team-leader__card:hover .team-leader__card-middle .team-leader__card-middle-img {
+    width: 150%;
+    min-height: 20rem;
+    background-size: 100%;
+    background-position: center 25%;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
 }
 @media only screen and (max-width: 500px) {
   .team-leader__card {
@@ -1332,6 +1341,7 @@ body {
   left: 0;
   top: 0;
   right: 0;
+  transition: all 0.3s ease;
 }
 @media only screen and (max-width: 768px) {
   .team-leader__card-middle {
