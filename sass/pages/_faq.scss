@@ -143,6 +143,10 @@
   &-text {
     display: none;
     margin: 30px 0 0;
+
+    @include respond(phone) {
+      text-align: justify;
+    }
   }
 
   &.active &-text {

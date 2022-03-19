@@ -32,15 +32,20 @@
 
     @include respond(phone) {
       padding: 0 3rem;
+      text-align: justify;
     }
   }
+
   &__content {
-    // margin: 5rem 0;
     padding: 5rem;
     width: auto;
     height: 100%;
     border-bottom: 2px solid rgba($color-primary, 0.3);
     border-top: 2px solid rgba($color-primary, 0.3);
+
+    @include respond(phone) {
+      padding: 2rem;
+    }
   }
 
   &__text {

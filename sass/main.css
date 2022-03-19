@@ -961,6 +961,11 @@ body {
   display: none;
   margin: 30px 0 0;
 }
+@media only screen and (max-width: 500px) {
+  .faq-text {
+    text-align: justify;
+  }
+}
 .faq.active .faq-text {
   display: block;
 }
@@ -1033,6 +1038,7 @@ body {
 @media only screen and (max-width: 500px) {
   .terms-paragraph {
     padding: 0 3rem;
+    text-align: justify;
   }
 }
 .terms__content {
@@ -1041,6 +1047,11 @@ body {
   height: 100%;
   border-bottom: 2px solid rgba(14, 128, 68, 0.3);
   border-top: 2px solid rgba(14, 128, 68, 0.3);
+}
+@media only screen and (max-width: 500px) {
+  .terms__content {
+    padding: 2rem;
+  }
 }
 .terms__text {
   width: 100%;
