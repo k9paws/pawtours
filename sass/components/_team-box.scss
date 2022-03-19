@@ -51,29 +51,37 @@
     @include respond(phone) {
       width: 50%;
     }
+    @include respond(min-hover) {
+      &:hover {
+        transform: translateY(-1.5rem) scale(1.05);
+        background-color: rgba($color-light, 0.95);
+      }
 
-    &:hover {
-      transform: translateY(-1.5rem) scale(1.05);
-      background-color: rgba($color-light, 0.95);
-    }
+      &:hover &-middle &-middle-img {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 20rem;
+        background-size: 100%;
+        background-position: center 25%;
+        border-radius: 2px;
+      }
 
-    &:hover &-middle &-middle-img {
-      display: block;
-      position: relative;
-      width: 100%;
-      height: 20rem;
-      background-size: 100%;
-      background-position: center 25%;
-      border-radius: 2px;
-    }
+      &:hover &-top {
+        transform: translateY(-100%);
+        opacity: 1;
+      }
 
-    &:hover &-top {
-      transform: translateY(-100%);
-      opacity: 1;
-    }
+      &:hover &-middle {
+        padding: 1rem;
+      }
 
-    &:hover &-middle {
-      padding: 1rem;
+      &:hover &-bottom {
+        transform: translateY(100%);
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        opacity: 1;
+      }
     }
 
     &-top {
@@ -184,7 +192,7 @@
     }
 
     &:hover &-middle {
-      background-color: clue;
+      background-color: #eee;
     }
 
     @include respond(tab-port) {
@@ -219,13 +227,6 @@
         opacity: 1;
         z-index: 2;
       }
-    }
-
-    &:hover &-bottom {
-      transform: translateY(100%);
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-      opacity: 1;
     }
 
     @include respond(tab-port) {

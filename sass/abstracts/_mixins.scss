@@ -43,6 +43,12 @@
     }
   }
 
+  @if $breakpoint == min-hover {
+    @media only screen and (min-width: 769px) {
+      @content;
+    }
+  }
+
   @if $breakpoint == laptop {
     @media only screen and (max-width: 1200px) {
       //1024px
