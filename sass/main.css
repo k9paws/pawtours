@@ -210,6 +210,11 @@ body {
   color: #333;
   transition: all 0.4s ease;
 }
+@media only screen and (max-width: 500px) {
+  .logo {
+    opacity: 0.6;
+  }
+}
 .logo--nine {
   color: #0e8044;
   font-size: 4rem;
@@ -2336,7 +2341,7 @@ body {
 }
 @media only screen and (max-width: 500px) {
   .footer {
-    padding: 7rem 0 3rem;
+    padding: 11rem 0 3rem;
   }
 }
 .footer__logo {
