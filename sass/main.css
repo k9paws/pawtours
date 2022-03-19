@@ -592,7 +592,7 @@ body {
   background: #eee;
   padding: 8rem 5rem;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   .contact-section {
     padding: 0 4rem 1rem;
   }
@@ -604,7 +604,7 @@ body {
   height: 100%;
   width: 100%;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   .contact-main {
     flex-direction: column;
   }
@@ -619,7 +619,7 @@ body {
   height: 100%;
   margin: auto;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   .contact-left {
     width: 100%;
     padding: 2rem;
@@ -630,7 +630,7 @@ body {
   padding-left: 5rem;
   padding-bottom: 8rem;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   .contact-left__info {
     padding: 0 5rem 3rem;
     text-align: center;
@@ -645,7 +645,18 @@ body {
   list-style: none;
   padding-bottom: 2rem;
 }
+@media only screen and (max-width: 768px) {
+  .contact-left__info--social ul {
+    width: 40%;
+    margin: 0 auto;
+  }
+}
 @media only screen and (max-width: 500px) {
+  .contact-left__info--social ul {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 768px) {
   .contact-left__info--social ul {
     justify-content: space-between;
   }
@@ -655,7 +666,7 @@ body {
   font-size: 1.2rem;
   display: inline-block;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   .contact-left__info--social ul li a {
     padding: 1rem;
   }
@@ -663,7 +674,7 @@ body {
 .contact-left__info--social ul li a:first-child {
   padding-left: 0;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   .contact-left__info--social ul li a:first-child {
     padding-left: 1rem;
   }
@@ -692,12 +703,12 @@ body {
 }
 .contact-left__img-bottom .carousel {
   box-shadow: 1rem 2rem 2rem rgba(0, 0, 0, 0.3);
-  width: 40rem;
+  width: auto;
   height: auto;
   overflow: hidden;
   border-radius: 0.9rem;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   .contact-left__img-bottom .carousel {
     width: auto;
   }
@@ -711,7 +722,7 @@ body {
 .contact-right {
   width: 55%;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   .contact-right {
     width: 100%;
     position: relative;
@@ -723,7 +734,7 @@ body {
   width: 100%;
   box-shadow: 2rem 2rem #b5e582;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   .contact-form-container {
     margin: 3rem 0;
     box-shadow: none;
@@ -1017,6 +1028,7 @@ body {
 
 .terms-paragraph {
   font-size: 2rem;
+  padding: 0 2rem;
 }
 @media only screen and (max-width: 500px) {
   .terms-paragraph {
@@ -1929,6 +1941,13 @@ body {
      object-fit: cover;
 }
 
+@media only screen and (max-width: 500px) {
+  .booking-form h2 {
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+}
 @media only screen and (max-width: 500px) {
   .booking-form__group-btn button {
     min-width: 100%;

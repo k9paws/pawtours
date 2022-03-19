@@ -20,7 +20,7 @@
   background: #eee;
   padding: 8rem 5rem;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     padding: 0 4rem 1rem;
   }
 }
@@ -31,7 +31,7 @@
   height: 100%;
   width: 100%;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     flex-direction: column;
   }
 }
@@ -45,7 +45,7 @@
   height: 100%;
   margin: auto;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     width: 100%;
     padding: 2rem;
   }
@@ -55,7 +55,7 @@
     padding-left: 5rem;
     padding-bottom: 8rem;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       padding: 0 5rem 3rem;
       text-align: center;
     }
@@ -68,8 +68,16 @@
         display: flex;
         list-style: none;
         padding-bottom: 2rem;
+        @include respond(tab-port) {
+          width: 40%;
+          margin: 0 auto;
+        }
 
         @include respond(phone) {
+          width: 90%;
+        }
+
+        @include respond(tab-port) {
           justify-content: space-between;
         }
 
@@ -77,7 +85,7 @@
           padding: 0 4rem;
           font-size: 1.2rem;
           display: inline-block;
-          @include respond(phone) {
+          @include respond(tab-port) {
             padding: 1rem;
           }
         }
@@ -85,7 +93,7 @@
         li a:first-child {
           padding-left: 0;
 
-          @include respond(phone) {
+          @include respond(tab-port) {
             padding-left: 1rem;
           }
         }
@@ -115,20 +123,16 @@
       height: 100%;
       border-radius: 0.9rem;
       object-fit: cover;
-
-      @include respond(phone) {
-        // width: 75%;
-      }
     }
 
     .carousel {
       box-shadow: 1rem 2rem 2rem rgba(0, 0, 0, 0.3);
-      width: 40rem;
+      width: auto;
       height: auto;
       overflow: hidden;
       border-radius: 0.9rem;
 
-      @include respond(phone) {
+      @include respond(tab-port) {
         width: auto;
       }
     }
@@ -144,7 +148,7 @@
 .contact-right {
   width: 55%;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     width: 100%;
     position: relative;
     // top: -20rem;
@@ -157,7 +161,7 @@
   width: 100%;
   box-shadow: 2rem 2rem $color-primary-light;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     margin: 3rem 0;
     box-shadow: none;
   }

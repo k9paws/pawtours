@@ -1,4 +1,11 @@
 .booking-form {
+  h2 {
+    @include respond(phone) {
+      text-align: center;
+      width: 100%;
+      display: block;
+    }
+  }
   &__group {
     &-btn button {
       @include respond(phone) {
