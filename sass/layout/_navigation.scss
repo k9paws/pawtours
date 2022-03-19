@@ -73,11 +73,16 @@
     text-align: center;
     z-index: 110;
     width: 40%;
+
+    @include respond(phone) {
+      width: 75%;
+    }
   }
 
   &__item {
     margin: 2rem;
     background-color: $color-primary;
+    width: auto;
   }
 
   &__link {

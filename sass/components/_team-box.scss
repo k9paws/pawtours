@@ -42,10 +42,14 @@
     @include respond(tab-port) {
       width: 30%;
       height: 30rem;
-      transform: translateX(-46%);
+      transform: translateX(-47.5%);
       margin-left: 0;
       margin-right: 0;
       margin: 5rem;
+    }
+
+    @include respond(phone) {
+      width: 50%;
     }
 
     &:hover {

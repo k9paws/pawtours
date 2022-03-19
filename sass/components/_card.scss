@@ -7,6 +7,10 @@
   width: 30%;
   margin-top: 5rem;
 
+  @include respond(phone) {
+    width: 48%;
+  }
+
   // @include respond(tab-port) {
   //   min-height: 100rem;
   // }
